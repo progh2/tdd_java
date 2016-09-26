@@ -9,14 +9,14 @@ import kr.hs.emirim.progh2.bankbusiness.main.Account;
 public class AccountTest {
 	private Account account;
 
+	public void setUp() {
+		account = new Account(10000);
+	}
+
 	@Test
 	public void testCreateAccount() throws Exception {
 		setUp();
 		assertNotEquals("계좌생성 실패!", null, account);
-	}
-
-	public void setUp() {
-		account = new Account(10000);
 	}
 
 	@Test
