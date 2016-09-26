@@ -32,4 +32,22 @@ public class AccountTest {
 			fail("계좌조회 실패!");
 		}
 	}
+
+	@Test
+	public void testDeposit() throws Exception {
+		Account account = new Account(10000);
+		account.deposit(1000);
+		if (account.getBalance() != 11000) {
+			fail("계좌입금 실패!");
+		}
+	}
+
+	@Test
+	public void testWithdraw() throws Exception {
+		Account account = new Account(10000);
+		account.withdraw(1000);
+		if (account.getBalance() != 9000) {
+			fail("계좌출금 실패!");
+		}
+	}
 }
