@@ -7,4 +7,9 @@ public class AccountTest {
 			throw new Exception("계좌생성 실패!");
 		}
 	}
+	
+	public static void main(String[] args){
+		AccountTest test = new AccountTest();
+		test.testCreateAccount();
+	}
 }
