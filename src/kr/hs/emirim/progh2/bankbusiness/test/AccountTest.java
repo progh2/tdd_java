@@ -11,7 +11,7 @@ public class AccountTest {
 	public void testCreateAccount() throws Exception {
 		Account account = new Account();
 		if (account == null) {
-			throw new Exception("계좌생성 실패!");
+			fail("계좌생성 실패!");
 		}
 	}
 	
@@ -19,7 +19,7 @@ public class AccountTest {
 	public void testGetBalance() throws Exception {
 		Account account = new Account(10000);
 		if(account.getBalance() != 10000){
-			throw new Exception("계좌조회 실패!");
+			fail("계좌조회 실패!");
 		}
 	}
 }
