@@ -8,13 +8,9 @@
 작업 순서대로 보고싶다면 아래 링크로 가서 커밋 내역을 밑에서부터 클릭해서 확인해도 됩니다.
 https://github.com/progh2/tdd_java/commits/master
   
-'''
-  #3 Bank Business 자바 프로젝트 생성  <-- 여기서부터 실습이 시작됩니다.
-'''
+> #3 Bank Business 자바 프로젝트 생성  <-- 여기서부터 실습이 시작됩니다.
   
   소스를 다운로드해서 보고 싶은 분은 우측 상단에 있는 초록색 'Clone or download▼' 버튼을 클릭하면 소스를 다운받을 수 있습니다.
  git으로 다운받고 싶은 학생은 아래 명령을 cmd창에서 실행하면 됩니다. (git이 설치되어 있어야겠죠?)
  
- ''' 
- git clone https://github.com/progh2/tdd_java.git
- '''
+> git clone https://github.com/progh2/tdd_java.git
