@@ -1,14 +1,14 @@
 package kr.hs.emirim.progh2.bankbusiness.main;
 
 public class Account {
-
+	private int mMoney;
+	
 	public Account(int i) {
-		// TODO Auto-generated constructor stub
+		mMoney = i;
 	}
 
 	public int getBalance() {
-		// TODO Auto-generated method stub
-		return 10000;
+		return mMoney;
 	}
 
 }
