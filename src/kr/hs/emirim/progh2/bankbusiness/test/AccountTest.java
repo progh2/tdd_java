@@ -9,7 +9,7 @@ import kr.hs.emirim.progh2.bankbusiness.main.Account;
 public class AccountTest {
 	@Test
 	public void testCreateAccount() throws Exception {
-		Account account = new Account();
+		Account account = new Account(10000);
 		if (account == null) {
 			fail("계좌생성 실패!");
 		}
