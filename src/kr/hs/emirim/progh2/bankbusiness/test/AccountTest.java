@@ -12,6 +12,11 @@ public class AccountTest {
 	
 	public static void main(String[] args){
 		AccountTest test = new AccountTest();
-		test.testCreateAccount();
+		try {
+			test.testCreateAccount();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
