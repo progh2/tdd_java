@@ -17,6 +17,9 @@ public class AccountTest {
 	
 	@Test
 	public void testGetBalance() throws Exception {
-		
+		Account account = new Account(10000);
+		if(account.getBalance() != 10000){
+			throw new Exception("계좌조회 실패!");
+		}
 	}
 }
