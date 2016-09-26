@@ -11,13 +11,13 @@ public class Account {
 		return mMoney;
 	}
 
-	public void deposit(int i) {
-		mMoney += i;
+	public void deposit(int money) {
+		mMoney += money;
 
 	}
 
-	public void withdraw(int i) {
-		mMoney -= i;
+	public void withdraw(int money) {
+		mMoney -= money;
 
 	}
 
