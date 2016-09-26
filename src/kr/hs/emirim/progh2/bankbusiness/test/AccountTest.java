@@ -10,44 +10,32 @@ public class AccountTest {
 	@Test
 	public void testCreateAccount() throws Exception {
 		Account account = new Account(10000);
-		if (account == null) {
-			fail("계좌생성 실패!");
-		}
+		assertNotEquals("계좌생성 실패!", null, account);
 	}
 
 	@Test
 	public void testGetBalance() throws Exception {
 		Account account = new Account(10000);
-		if (account.getBalance() != 10000) {
-			fail("계좌조회 실패!");
-		}
+		assertEquals("계좌조회 실패!", 10000, account.getBalance());
 
 		account = new Account(1000);
-		if (account.getBalance() != 1000) {
-			fail("계좌조회 실패!");
-		}
+		assertEquals("계좌조회 실패!", 1000, account.getBalance());
 
 		account = new Account(500);
-		if (account.getBalance() != 500) {
-			fail("계좌조회 실패!");
-		}
+		assertEquals("계좌조회 실패!", 500, account.getBalance());
 	}
 
 	@Test
 	public void testDeposit() throws Exception {
 		Account account = new Account(10000);
 		account.deposit(1000);
-		if (account.getBalance() != 11000) {
-			fail("계좌입금 실패!");
-		}
+		assertEquals("계좌입금 실패!", 11000, account.getBalance());
 	}
 
 	@Test
 	public void testWithdraw() throws Exception {
 		Account account = new Account(10000);
 		account.withdraw(1000);
-		if (account.getBalance() != 9000) {
-			fail("계좌출금 실패!");
-		}
+		assertEquals("계좌출금 실패!", 9000, account.getBalance());
 	}
 }
