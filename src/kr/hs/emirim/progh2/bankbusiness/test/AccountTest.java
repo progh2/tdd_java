@@ -2,6 +2,7 @@ package kr.hs.emirim.progh2.bankbusiness.test;
 
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import kr.hs.emirim.progh2.bankbusiness.main.Account;
@@ -9,6 +10,7 @@ import kr.hs.emirim.progh2.bankbusiness.main.Account;
 public class AccountTest {
 	private Account account;
 
+	@Before
 	public void setUp() {
 		account = new Account(10000);
 	}
