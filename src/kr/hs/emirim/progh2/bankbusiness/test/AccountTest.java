@@ -15,8 +15,10 @@ public class AccountTest {
 		try {
 			test.testCreateAccount();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println("실패(X)");
+			e.printStackTrace();			
+			return ;
 		}
+		System.out.println("성공(O)");
 	}
 }
