@@ -6,4 +6,9 @@ public class Account {
 		// TODO Auto-generated constructor stub
 	}
 
+	public int getBalance() {
+		// TODO Auto-generated method stub
+		return 10000;
+	}
+
 }
