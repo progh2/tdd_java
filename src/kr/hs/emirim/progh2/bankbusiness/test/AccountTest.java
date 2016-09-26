@@ -11,13 +11,17 @@ public class AccountTest {
 
 	@Test
 	public void testCreateAccount() throws Exception {
-		account = new Account(10000);
+		setUp();
 		assertNotEquals("계좌생성 실패!", null, account);
+	}
+
+	public void setUp() {
+		account = new Account(10000);
 	}
 
 	@Test
 	public void testGetBalance() throws Exception {
-		account = new Account(10000);
+		setUp();
 		assertEquals("계좌조회 실패!", 10000, account.getBalance());
 
 		account = new Account(1000);
@@ -29,14 +33,14 @@ public class AccountTest {
 
 	@Test
 	public void testDeposit() throws Exception {
-		account = new Account(10000);
+		setUp();
 		account.deposit(1000);
 		assertEquals("계좌입금 실패!", 11000, account.getBalance());
 	}
 
 	@Test
 	public void testWithdraw() throws Exception {
-		account = new Account(10000);
+		setUp();
 		account.withdraw(1000);
 		assertEquals("계좌출금 실패!", 9000, account.getBalance());
 	}
