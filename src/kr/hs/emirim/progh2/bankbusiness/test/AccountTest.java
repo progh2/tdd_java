@@ -12,16 +12,4 @@ public class AccountTest {
 			throw new Exception("계좌생성 실패!");
 		}
 	}
-
-	public static void main(String[] args) {
-		AccountTest test = new AccountTest();
-		try {
-			test.testCreateAccount();
-		} catch (Exception e) {
-			System.out.println("실패(X)");
-			e.printStackTrace();
-			return;
-		}
-		System.out.println("성공(O)");
-	}
 }
